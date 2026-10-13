@@ -26,9 +26,10 @@ O aprendizado será organizado de forma incremental, aplicando boas práticas de
 ## Estrutura atual
 
 ```text
-EstudosCSharp/
+ProjectCSharp/
+├── .gitignore
 ├── Program.cs
-├── EstudosCSharp.csproj
+├── ProjectCSharp.csproj
 └── README.md
 ```
 
@@ -107,4 +108,14 @@ Tipos utilizados:
 ## Observações
 
 Este é um projeto de aprendizado em desenvolvimento contínuo. A documentação e as funcionalidades serão atualizadas conforme novos conceitos forem estudados e implementados.
+ 
+ ## Métodos 
+
+ Foi criado o método "ExibirTitulo()" para separar a exibição do título da lógica principal do cadastro
+
+ ### Conceitos praticados
+
+ - Declaração de métodos com "void".
+ - Chamada de métodos.
+ - Separação de responsabilidades.
  
