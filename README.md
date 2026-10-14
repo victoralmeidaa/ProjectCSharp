@@ -21,7 +21,7 @@ O aprendizado será organizado de forma incremental, aplicando boas práticas de
 - **Linguagem:** C#
 - **Plataforma:** .NET
 - **Editor:** Visual Studio Code
-- **Controle de versão:** Git
+- **Controle de versão:** Git e GutHub
 
 ## Estrutura atual
 
@@ -39,12 +39,26 @@ ProjectCSharp/
 
 O programa inicial apresenta informações de exemplo utilizando variáveis e exibição de mensagens no terminal.
 
-Conceitos praticados:
+### Cadastro de Chamado
 
-- Declaração de variáveis.
-- Tipos de dados: `string`, `int` e `bool`.
-- Exibição de informações com `Console.WriteLine()`.
-- Interpolação de strings.
+O programmapermite cadastrar umm chamado informando:
+- Nome do solicitante.
+- Descrição do problema
+
+Os campos são validados para impedir que o usuário prossiga com informações vazias ou compostas apenas porespaços vazios.
+
+Após o preenchimento correto, o programa exibe um resumo do chamado.
+
+Conceitos prativados:
+- Declaração de variáveis do tipo `string`.
+- Leitura de dados com `Console.ReadLine()`.
+- Exibição de informações como `Console.WriteLine()`.
+- Interpolação de strings. 
+- Validaação com `string.IsNullOrrWhiteSpace()`.
+- Estruturas de repetição como `while`.
+- Controle de fluxo com `if` e `break`.
+- Criação e chamada de métodos como `void`.
+- Tratamento de possíveis valores nulos com `??`.
 
 ## Como executar
 
@@ -97,25 +111,31 @@ Tipos utilizados:
 
 ## Próximas etapas
 
-- [ ] Aprender a receber dados do usuário.
+### Progresso dos estudos
+
+- [x] Fundamentos de C# e entrada e saída de dados.
+- [x] Variáveis, strings e interpolação.
+- [x] Validação de entradas com `string.IsNullOrWhiteSpace()`.
+- [x] Condições e estruturas de repetição com `if` e `while`.
+- [x] Criação e chamada de métodos com `void`.
+- [x] Desenvolver um cadastro de chamado com validação de campos.
 - [ ] Praticar conversão e validação de tipos.
-- [ ] Implementar condições e estruturas de repetição.
-- [ ] Criar métodos e trabalhar com classes e objetos.
-- [ ] Desenvolver exercícios de cadastro e validação.
+- [ ] Aprofundar métodos com parâmetros e valores de retorno.
+- [ ] Trabalhar com classes e objetos.
+- [ ] Desenvolver novos exercícios de cadastro e validação.
 - [ ] Aprender testes automatizados e depuração.
 - [ ] Avançar para APIs com ASP.NET Core e integração com banco de dados.
 
-## Observações
-
-Este é um projeto de aprendizado em desenvolvimento contínuo. A documentação e as funcionalidades serão atualizadas conforme novos conceitos forem estudados e implementados.
- 
- ## Métodos 
+ ### Métodos 
 
  Foi criado o método "ExibirTitulo()" para separar a exibição do título da lógica principal do cadastro
 
- ### Conceitos praticados
+ #### Conceitos praticados
 
  - Declaração de métodos com "void".
  - Chamada de métodos.
  - Separação de responsabilidades.
- 
+
+## Observações
+
+Este é um projeto de aprendizado em desenvolvimento contínuo. A documentação e as funcionalidades serão atualizadas conforme novos conceitos forem estudados e implementados.
