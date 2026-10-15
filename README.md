@@ -21,7 +21,7 @@ O aprendizado será organizado de forma incremental, aplicando boas práticas de
 - **Linguagem:** C#
 - **Plataforma:** .NET
 - **Editor:** Visual Studio Code
-- **Controle de versão:** Git e GutHub
+- **Controle de versão:** Git e GitHub
 
 ## Estrutura atual
 
@@ -41,15 +41,15 @@ O programa inicial apresenta informações de exemplo utilizando variáveis e ex
 
 ### Cadastro de Chamado
 
-O programmapermite cadastrar umm chamado informando:
+O programapermite cadastrar um chamado informando:
 - Nome do solicitante.
 - Descrição do problema
 
-Os campos são validados para impedir que o usuário prossiga com informações vazias ou compostas apenas porespaços vazios.
+Os campos são validados para impedir que o usuário prossiga com informações vazias ou compostas apenas por espaços vazios.
 
 Após o preenchimento correto, o programa exibe um resumo do chamado.
 
-Conceitos prativados:
+Conceitos praticados:
 - Declaração de variáveis do tipo `string`.
 - Leitura de dados com `Console.ReadLine()`.
 - Exibição de informações como `Console.WriteLine()`.
