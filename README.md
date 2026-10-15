@@ -54,7 +54,7 @@ Conceitos praticados:
 - Leitura de dados com `Console.ReadLine()`.
 - Exibição de informações como `Console.WriteLine()`.
 - Interpolação de strings. 
-- Validaação com `string.IsNullOrrWhiteSpace()`.
+- Validaação com `string.IsNullOrWhiteSpace()`.
 - Estruturas de repetição como `while`.
 - Controle de fluxo com `if` e `break`.
 - Criação e chamada de métodos como `void`.
