@@ -2,8 +2,8 @@
 string descricao;
 
 ExibirTitulo();
-nome = ColetarDados("Informme o nome do solicitante:");
-descricao = ColetarDados("Indorme adecrição do problema: ");
+nome = ColetarDados("Informe o nome do solicitante: ");
+descricao = ColetarDados("Informe a descrição do problema: ");
 
 
 
