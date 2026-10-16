@@ -41,15 +41,15 @@ O programa inicial apresenta informações de exemplo utilizando variáveis e ex
 
 ### Cadastro de Chamado
 
-O programapermite cadastrar um chamado informando:
+O programa permite cadastrar um chamado informando:
 - Nome do solicitante.
 - Descrição do problema
 
-Os campos são validados para impedir que o usuário prossiga com informações vazias ou compostas apenas por espaços vazios.
+A coleta e validação do nome e da descrição são realizadas por um método reutilizável, `ColetarDados()`, que recebe a mensagem a ser exibida ao usuário e devolve o valor válido, evitando repetição de código.
 
 Após o preenchimento correto, o programa exibe um resumo do chamado.
 
-Conceitos praticados:
+#### Conceitos praticados:
 - Declaração de variáveis do tipo `string`.
 - Leitura de dados com `Console.ReadLine()`.
 - Exibição de informações como `Console.WriteLine()`.
@@ -58,7 +58,11 @@ Conceitos praticados:
 - Estruturas de repetição como `while`.
 - Controle de fluxo com `if` e `break`.
 - Criação e chamada de métodos como `void`.
+- Declaração de métodos com parâmetros.
+- Retorno de valores com métodos `string`.
 - Tratamento de possíveis valores nulos com `??`.
+- Chamada de métodos.
+- Separação de responsabilidades.
 
 ## Como executar
 
@@ -120,7 +124,7 @@ Tipos utilizados:
 - [x] Criação e chamada de métodos com `void`.
 - [x] Desenvolver um cadastro de chamado com validação de campos.
 - [ ] Praticar conversão e validação de tipos.
-- [ ] Aprofundar métodos com parâmetros e valores de retorno.
+- [x] Aprofundar métodos com parâmetros e valores de retorno.
 - [ ] Trabalhar com classes e objetos.
 - [ ] Desenvolver novos exercícios de cadastro e validação.
 - [ ] Aprender testes automatizados e depuração.
@@ -128,13 +132,9 @@ Tipos utilizados:
 
  ### Métodos 
 
- Foi criado o método "ExibirTitulo()" para separar a exibição do título da lógica principal do cadastro
+ Foi criado o método "ExibirTitulo()" para separar a exibição do título da lógica principal do cadastro.
+ Também foi criado o método "ColetarDados()", responsável por coletar e validar o nome e a descrição do chamado, evitando a repetição de código entre os dois campos.
 
- #### Conceitos praticados
-
- - Declaração de métodos com "void".
- - Chamada de métodos.
- - Separação de responsabilidades.
 
 ## Observações
 
