@@ -1,34 +1,31 @@
-﻿void ExibirTitulo ()
-{
-    Console.WriteLine("=== Cadastro de Chamado ===");
-}
-
-string nome;
+﻿string nome;
 string descricao;
 
 ExibirTitulo();
+nome = ColetarDados("Informe o nome do solicitante: ");
+descricao = ColetarDados("Informe a descrição do problema: ");
 
-while(true) // Loop para garantir que o nome do solicitante não seja vazio.
-{
-    Console.WriteLine("Informe o nome do Solicitante: ");
-    nome = Console.ReadLine() ?? "";
-    if(!string.IsNullOrWhiteSpace(nome))
-    {
-        break;
-    }
-    Console.WriteLine("Error: Nome de solicitante não pode ser vazio. Por favor, Tente novamente.\n");
-}
-while(true) // Loop para garantir que a descrição do problema não seja vazio.
-{
-    Console.WriteLine("Informe a descrição do problema: ");
-    descricao=Console.ReadLine()??"";
-    if(!string.IsNullOrWhiteSpace(descricao))
-    {
-        break;
-    }
-    Console.WriteLine("Error: Deescrição do problema não pode ser vazio.  Por favor, Tente novamente.\n");
-}
+
+
 Console.WriteLine();
 Console.WriteLine("=== Resumo do chamado ===");
 Console.WriteLine($"=== Solicitante: {nome} ===");
 Console.WriteLine($"=== Descrição do problema: {descricao}  ===");
+
+void ExibirTitulo()
+{
+    Console.WriteLine("=== Cadastro de Chamado ===");
+}
+string ColetarDados(string mensagem)
+{
+    while(true)
+    {
+        Console.Write(mensagem);
+        string valor = Console.ReadLine()??"";
+        if(!string.IsNullOrWhiteSpace(valor))
+        {
+            return valor;
+        }
+        Console.WriteLine("Erro: O campo não pode ser vazio! Por favor, Informe um valor válido.");
+    }
+}
