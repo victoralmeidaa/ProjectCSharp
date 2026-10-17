@@ -54,7 +54,7 @@ Após o preenchimento correto, o programa exibe um resumo do chamado.
 - Leitura de dados com `Console.ReadLine()`.
 - Exibição de informações como `Console.WriteLine()`.
 - Interpolação de strings. 
-- Validaação com `string.IsNullOrWhiteSpace()`.
+- Validação com `string.IsNullOrWhiteSpace()`.
 - Estruturas de repetição como `while`.
 - Controle de fluxo com `if` e `break`.
 - Criação e chamada de métodos como `void`.
@@ -123,12 +123,21 @@ Tipos utilizados:
 - [x] Condições e estruturas de repetição com `if` e `while`.
 - [x] Criação e chamada de métodos com `void`.
 - [x] Desenvolver um cadastro de chamado com validação de campos.
+- [ ] Percorrer textos com `foreach`.
 - [ ] Praticar conversão e validação de tipos.
 - [x] Aprofundar métodos com parâmetros e valores de retorno.
 - [ ] Trabalhar com classes e objetos.
 - [ ] Desenvolver novos exercícios de cadastro e validação.
 - [ ] Aprender testes automatizados e depuração.
-- [ ] Avançar para APIs com ASP.NET Core e integração com banco de dados.
+- [ ] Aprender SQL e modelagem de banco de dados.
+- [ ] Integrar aplicações C# com banco de dados.
+- [ ] Criar APIs com ASP.NET Core.
+- [ ] Organizar aplicações em camadas com o padrão MVC.
+- [ ] Registrar logs em aplicações.
+- [ ] Praticar integração e entrega contínuas (CI/CD).
+- [ ] Conhecer os fundamentos de Scrum e metodologias ágeis.
+- [ ] Empacotar aplicações com Docker.
+- [ ] Conhecer os conceitos de mensageria.
 
  ### Métodos 
 
