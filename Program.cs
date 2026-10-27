@@ -1,14 +1,17 @@
 ﻿string nome;
 string descricao;
+int nivelPrioridade;
 
 ExibirTitulo();
 nome = ColetarNome("Informe o nome do solicitante: ");
 descricao = ColetarDados("Informe a descrição do problema: ");
+nivelPrioridade = ColetarPrioridade("Informe o nível de prioridade (1 a 5): ");
 
 Console.WriteLine();
 Console.WriteLine("=== Resumo do chamado ===");
 Console.WriteLine($"=== Solicitante: {nome} ===");
 Console.WriteLine($"=== Descrição do problema: {descricao}  ===");
+Console.WriteLine($"=== Nível de prioridade: {nivelPrioridade} ===");
 
 void ExibirTitulo()
 {
@@ -19,13 +22,27 @@ string ColetarDados(string mensagem) // Coleta e valida se o campo não está va
     while(true)
     {
         Console.Write(mensagem);
-        string nome = Console.ReadLine()??"";  // Coleta nome do solicitante e garante que não seja nulo.
-        if(!string.IsNullOrWhiteSpace(nome)) // Valida se o campo não está vazio ou contém apenas espaços.
+        string nome = Console.ReadLine()??"";   // Coleta nome do solicitante e garante que não seja nulo.
+        if(!string.IsNullOrWhiteSpace(nome))    // Valida se o campo não está vazio ou contém apenas espaços.
         {
             return nome;
         }
         Console.WriteLine("Erro: O campo não pode ser vazio! Por favor, Informe um valor válido.");
     }
+}
+int ColetarPrioridade(string mensagem)
+{
+    while(true)
+    {
+        Console.Write(mensagem);
+        string prioridade = Console.ReadLine()??"";
+        if(int.TryParse(prioridade, out int nivelPrioridade) && nivelPrioridade >= 1 && nivelPrioridade <= 5)
+        {
+            return nivelPrioridade;
+        } 
+        Console.WriteLine("Erro: O nível de prioridade deve ser um número entre 1 e 5. Por favor, Informe um valor válido.");         
+    }
+
 }
 bool NomeValido(string texto) // Valida se o nome informado contém apenas letras e espaços
 {
