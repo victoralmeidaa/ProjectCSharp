@@ -1,17 +1,15 @@
-﻿string nome;
-string descricao;
-int nivelPrioridade;
+﻿Chamado chamado  = new Chamado();
 
 ExibirTitulo();
-nome = ColetarNome("Informe o nome do solicitante: ");
-descricao = ColetarDados("Informe a descrição do problema: ");
-nivelPrioridade = ColetarPrioridade("Informe o nível de prioridade (1 a 5): ");
+chamado.Nome = ColetarNome("Informe o nome do solicitante: ");
+chamado.Descricao = ColetarDados("Informe a descrição do problema: ");
+chamado.Prioridade = ColetarPrioridade("Informe o nível de prioridade (1 a 5): ");
 
 Console.WriteLine();
 Console.WriteLine("=== Resumo do chamado ===");
-Console.WriteLine($"=== Solicitante: {nome} ===");
-Console.WriteLine($"=== Descrição do problema: {descricao}  ===");
-Console.WriteLine($"=== Nível de prioridade: {nivelPrioridade} ===");
+Console.WriteLine($"=== Solicitante: {chamado.Nome} ===");
+Console.WriteLine($"=== Descrição do problema: {chamado.Descricao}  ===");
+Console.WriteLine($"=== Nível de prioridade: {chamado.Prioridade} ===");
 
 void ExibirTitulo()
 {
