@@ -43,9 +43,15 @@ O programa inicial apresenta informações de exemplo utilizando variáveis e ex
 
 O programa permite cadastrar um chamado informando:
 - Nome do solicitante.
-- Descrição do problema
+- Descrição do problema.
+- Nível de prioridade, de 1 a 5.
 
-A coleta e validação do nome e da descrição são realizadas por um método reutilizável, `ColetarDados()`, que recebe a mensagem a ser exibida ao usuário e devolve o valor válido, evitando repetição de código.
+A coleta dos campos é feita por métodos próprios, cada um com a sua validação:
+
+- `ColetarDados()`: Coleta um texto e não aceita campo vazio nem composto apenas por espaços. É usado na descrição do problema.
+- `ColetarNome()`: Reaproveita o `ColetarDados()` e, além disso, só aceita letras e espaços, usando o método `NomeValido()`.
+- `ColetarPrioridade()`: Aceita apenas um número inteiro de 1 a 5 e devolve o valor já convertido para `int`.
+- O método `ExibirTitulo()` exibe o título do cadastro, separando essa responsabilidade da lógica principal.
 
 Após o preenchimento correto, o programa exibe um resumo do chamado.
 
@@ -59,10 +65,14 @@ Após o preenchimento correto, o programa exibe um resumo do chamado.
 - Controle de fluxo com `if` e `break`.
 - Criação e chamada de métodos como `void`.
 - Declaração de métodos com parâmetros.
-- Retorno de valores com métodos `string`.
+- Retorno de valores com métodos (`string`, `bool` e `int`).
 - Tratamento de possíveis valores nulos com `??`.
 - Chamada de métodos.
 - Separação de responsabilidades.
+- Percorrer textos com `foreach`.
+- Verificação de caracteres com `char.IsLetter()` e `char.IsWhiteSpace()`.
+- Conversão de texto em número com `int.TryParse()` e `out`.
+- Combinação de condições com o operador `&&`.
 
 ## Como executar
 
@@ -138,12 +148,6 @@ Tipos utilizados:
 - [ ] Conhecer os fundamentos de Scrum e metodologias ágeis.
 - [ ] Empacotar aplicações com Docker.
 - [ ] Conhecer os conceitos de mensageria.
-
- ### Métodos 
-
- Foi criado o método "ExibirTitulo()" para separar a exibição do título da lógica principal do cadastro.
- Também foi criado o método "ColetarDados()", responsável por coletar e validar o nome e a descrição do chamado, evitando a repetição de código entre os dois campos.
-
 
 ## Observações
 
