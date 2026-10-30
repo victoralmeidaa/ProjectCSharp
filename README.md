@@ -28,6 +28,7 @@ O aprendizado será organizado de forma incremental, aplicando boas práticas de
 ```text
 ProjectCSharp/
 ├── .gitignore
+├── Chamado.cs
 ├── Program.cs
 ├── ProjectCSharp.csproj
 └── README.md
@@ -45,6 +46,7 @@ O programa permite cadastrar um chamado informando:
 - Nome do solicitante.
 - Descrição do problema.
 - Nível de prioridade, de 1 a 5.
+- Os dados do chamado ficam agrupados na classe `Chamado`, definida no arquivo `Chamado.cs`.
 
 A coleta dos campos é feita por métodos próprios, cada um com a sua validação:
 
@@ -73,6 +75,9 @@ Após o preenchimento correto, o programa exibe um resumo do chamado.
 - Verificação de caracteres com `char.IsLetter()` e `char.IsWhiteSpace()`.
 - Conversão de texto em número com `int.TryParse()` e `out`.
 - Combinação de condições com o operador `&&`.
+- Criação  de classes com prioridades(`get` e `set`).
+- Criação de objetos com `new`e acesso às prioridades.
+- Organização do código em arquivo separados.
 
 ## Como executar
 
